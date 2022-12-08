@@ -1,0 +1,11 @@
+/* Dancing Script */
+@font-face {
+    font-family: "Dancing Script";
+    src: url("/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+/* Lobster */
+@font-face {
+    font-family: Lobster;
+    src: url("/Lobster/Lobster-Regular.ttf");
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+    @import url('/nov30_fonts.css');
+
+    a{
+        text-decoration: none;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    /* Pseudo Classes */
+    a:link{
+        color: black;
+    }
+    a:visited{
+        color: grey;
+    }
+    a:hover{
+        color: green;
+    }
+    a:active{
+        color: red;
+    }
+    
+    #item1{
+        height: 50px;
+        width: 100px;
+        background-color: blanchedalmond;
+        font-family: "Lobster", cursive;
+    }
+
+    #item1:hover{
+        background-color: lightcoral;
+    }
+    .box:active{
+        color: red;
+    }
+
+    /* Using built in fonts/web safe fonts */
+    #link1{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #link2{
+        font-family: 'Nerko One', cursive;
+    }
+    #link3{
+        font-family: 'Syne Mono', monospace;
+    }
+    #link4{
+        font-family: "Dancing Script", sans-serif;
+    }
+
+</style>
+<body>
+    <a id="link1" href="https://google.com">Google</a> <br> <br> <br>
+    <a id="link2" href="https://twitter.com">Twitter</a> <br> <br> <br>
+    <a id="link3" href="https://facebook.com">Facebook</a> <br> <br> <br>
+    <a id="link4" href="https://linkedin.com">Linked In</a> <br> <br> <br>
+    <div id="item1" class="box">Box 1</div>
+</body>
+</html>
