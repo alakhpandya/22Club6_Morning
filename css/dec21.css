@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url('/photos/logo_nike.jpg'); */
+    /* background-size: 305px; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat;          default */
+    /* background-repeat: round; */
+    height: 100vh;
+    /* background-position: 100px 0px; */
+    /* background-position: 100px 50px; */
+    /* background-position: top left; */
+    /* background-position: top center; */
+    /* background-position: top right; */
+    /* background-position: center left; */
+    /* background-position: center right; */
+    /* background-position: center;        as good as writing 'center center' */
+    /* background-position: bottom left; */
+    /* background-position: bottom center; */
+    /* background-position: bottom right; */
+
+
+    /* 
+    background: top left/300px url('/photos/logo_porche.png') no-repeat;
+    background: top right/300px url('/photos/logo_porche.png') no-repeat;
+    background: center right/300px url('/photos/logo_porche.png') no-repeat;
+     */
+
+    background: center/contain url('/photos/logo_porche.png') no-repeat;
+    background-attachment: fixed;
+
+    /* opacity: 0.5; */
+
+    /* color: skyblue; */
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+p{
+    font-size: 1.3rem;
+    background-color: rgba(234, 128, 96, 0.5);
+}
+
+.bg-img{
+    border: 2px solid red;
+    background-image: url("/photos/pexels-david-dibert-635512.jpg");
+    height: 100vh;
+    /* background-size: 100vh; */
+    /* background-size: auto 100vh; */
+    /* background-size: 100vw 100vh; */
+    /* background-size: auto;      Actual size of the image */
+    /* background-size: contain;    Image will SHRINK to be totally contained in the container */
+    /* background-size: cover;      Image will ENLARGE to cover the entire container at the cost of losing some portion of the image */
+
+    background-repeat: no-repeat;
+}
+
+.bg-img h1{
+    color: white;
+    text-align: center;
+}

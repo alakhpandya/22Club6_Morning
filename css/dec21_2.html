@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 2px solid;
+        height: 10rem;
+        width: 22rem;
+        margin: auto;
+        position: relative;
+    }
+    #btn1{
+        position: static;  /* default position */
+        /* top/left/bottom/right work with all the positions except static */
+    }
+    #btn2{
+        position: relative;
+        /* Element can be moved with respect to its original position */
+        /* keeps its original place reserved */
+        top: 10px;
+        /* bottom: 10px; */
+        /* left: 20px; */
+        right: 50px;
+    }
+    #btn3{
+        position: absolute;
+        /* Does not keep its original place */
+        /* Element can be moved with respect to its that parent whose position is relative. If none of the parents' position is relative, then it will move with respect to body */
+
+        top: 10px;
+        /* bottom: 10px; */
+        left: 10px;
+        /* right: 10px; */
+    }
+</style>
+<body>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <br><br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="btn1">Static</button>
+        <button id="btn2">Relative</button>
+        <button id="btn3">Absolute</button>
+        <button id="btn4">Fixed</button>
+        <button id="btn5">Sticky</button>
+    </div>
+</body>
+</html>
