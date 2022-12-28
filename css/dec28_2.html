@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+/*     
+    #I{
+        background-color: orangered;
+        display: block;
+    }
+    #india{
+        background-color: green;
+        display: block;
+    } */
+    /* Before & After (Pseudo Elements) */
+    h1::before{
+        content: 'I';
+        display: block;
+        background-color: orangered;
+    }
+    h1::after{
+        content: 'India';
+        display: block;
+        background-color: green;
+    }
+    /* We should not give more than 1 before or after to an element */
+    #title::before{
+        /* content: ''; */
+        color: white;
+    }
+</style>
+<body>
+    <!-- <h1><span id="I">I</span>Love<span id="india">India</span></h1> -->
+
+    <h1 id="title">Love</h1>
+    <!-- before & after stay INSIDE the target element but the go 'before' & 'after' the content of the target element -->
+    <!-- That's why before & after don't work on empty tags/self-closing tags like:
+    <img src="" alt="">
+    <input type="text">
+    -->
+</body>
+</html>

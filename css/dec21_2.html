@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .container{
         border: 2px solid;
         height: 10rem;
@@ -31,11 +36,30 @@
         position: absolute;
         /* Does not keep its original place */
         /* Element can be moved with respect to its that parent whose position is relative. If none of the parents' position is relative, then it will move with respect to body */
+        /* Converts the element into inline */
 
         top: 10px;
         /* bottom: 10px; */
         left: 10px;
         /* right: 10px; */
+    }
+    #btn4{
+        border: 2px solid blue;
+        height: 2rem;
+        background-color: pink;
+        
+        position: fixed;
+        /* Does not keep its original place */
+        /* Converts the element into inline */
+        /* Element can be moved with respect to the viewport only */
+
+        top: 0;
+    }
+    #btn5{
+        position: sticky;
+        /* Does not keep its original place */
+        /* Does not convert the element into inline */
+        /* Element can be moved with respect to the viewport only */
     }
 </style>
 <body>
@@ -46,7 +70,7 @@
         <button id="btn1">Static</button>
         <button id="btn2">Relative</button>
         <button id="btn3">Absolute</button>
-        <button id="btn4">Fixed</button>
+        <p id="btn4">Fixed</p>
         <button id="btn5">Sticky</button>
     </div>
 </body>
