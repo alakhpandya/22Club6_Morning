@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: 2px solid red;
+        margin: 1rem;
+    }
+    a{
+        border: 2px solid blue;
+        /* outline: 2px solid red; */
+        text-decoration: none;
+        /* padding: 0.2rem 0.6rem; */
+        
+    }
+    #box2{
+        display: inline;
+        height: 3rem;
+        width: 50vw;
+    }
+
+    /* Only <img> and <button> takes height & width amongst inline elements */
+    button{
+        height: 3rem;
+        width: 10rem;
+    }
+    #btn2{
+        display: block;
+        /* margin auto works only with block elements */
+        margin: auto;
+    }
+    #btn3{
+        margin: auto;
+    }
+    #btn4{
+        display: inline-block;
+        /* We can give height & width now */
+        height: 3rem;
+        width: 5rem;
+    }
+    form{
+        margin-top: 1rem;
+    }
+    input{
+        border: 2px solid blue;
+    }
+    input:focus{
+        /* border: 2px solid blue; */
+        /* border: none; */
+        /* outline: 2px solid red; */
+        outline: none;
+    }
+    ul{
+        /* list-style-type: none; */
+        list-style: none;
+    }
+</style>
+<body>
+    <div id="box1">Box1</div>
+    <div id="box2">Box2</div>
+    <a href="#">Button 1</a>
+    <div id="box3">Box3</div>
+    <button id="btn2">Button 2</button>
+    <button id="btn3">Button 3</button>
+    <a href="#" id="btn4">Button 4</a>
+    <a href="#" id="btn5">Button 5</a>
+    <form action="">
+        <input type="text" id="fName" placeholder="First Name">
+    </form>
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Consequuntur, enim fugiat?</li>
+        <li>Commodi, ipsa aspernatur?</li>
+        <li>Et, animi mollitia.</li>
+        <li>Enim, inventore ut.</li>
+    </ul>
+</body>
+</html>

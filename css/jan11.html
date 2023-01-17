@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS Reset */
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* border: 2px solid red; */
+        height: 100vh;
+    }
+    #btn1{
+        margin-right: 100px;
+        margin-top: 10px;
+    }
+    #btn2{
+        /* Margins overlap only in block elements */
+        margin-left: 100px;
+    }
+    #box1{
+        border: 2px solid blue;
+        width: 100px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* Margin auto doesn't work vertically */
+        /* Margin auto works only with block elements */
+        /* margin: auto;
+        margin-top: 3rem; */
+        margin: 3rem auto;
+        text-align: center;
+    }
+    #box2{
+        border: 2px green solid;
+        margin: auto;
+        margin-top: 5rem;
+        width: fit-content;
+        border-radius: 25px;
+
+        /* Individual paddings in each direction */
+        /* padding-left: 15px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        padding-top: 5px; */
+
+        /* Equal padding all sides */
+        /* padding: 15px; */
+
+        /* padding: top-bottom left-right */
+        /* padding: 5px 15px; */
+
+        /* padding: clockwise */
+        /* padding: 5px 10px 15px 20px; */
+
+        /* padding: top left-right bottom */
+        padding: 5px 20px 10px;
+    }
+    .common-boxes{
+        border: 2px solid red;
+        margin: 1rem auto;
+        width: 300px;
+        /* box-sizing: content-box; */
+        /* box-sizing: border-box; */
+    }
+
+    #box3{
+        padding: 20px;
+        border-width: 10px;
+    }
+    #box4{
+        /* width: 356px; */
+        /* padding: 1.3rem; */
+        /* padding: 1.3em;
+        font-size: 1.5rem; */
+    }
+</style>
+<body>
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <p>click 1</p>
+    <a href="#">click 2</a>
+    <br>
+    something
+    <div id="box1">Box 1</div>
+    <div id="box2">Box 2</div>
+    something else
+
+    <div class="common-boxes" id="box3">BOX-3: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique incidunt optio accusamus recusandae adipisci totam doloribus illo!</div>
+    <div class="common-boxes" id="box4">BOX-4:</div>
+    <div class="common-boxes" id="box5">BOX-5:</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+        background-color: black;
+    }
+
+    #section0{
+        background-color: lightgray;
+        padding: 2rem 0;
+        text-align: left;
+    }
+    h1 {
+        margin: 0 10vw;
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 3rem 10vw;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    section p {
+        font-size: 1.2rem;
+        line-height: 1.5em;
+        margin-bottom: 2rem;
+    }
+
+    #section1 {
+        color: #ddd;
+        text-align: center; /* Centers all in-line elements */
+    }
+
+    #section2 {
+        background-color: darkolivegreen;
+        text-align: justify;
+    }
+
+    #section3 {
+        color: #ddd;
+        position: relative;
+        text-align: right;
+    }
+
+    #section3::before {
+        content: "";
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('/photos/city_night_view.jpg') center/auto 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .btn{
+        border: none;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid white;
+        font-weight: bold;
+    }
+
+    .btn:hover{
+        background: transparent;
+        color: white;
+    }
+
+    h1, h2{
+        font-variant: small-caps;
+    }
+</style>
+
+<body>
+    <section id="section0">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim hic harum ut!</h1>
+    </section>
+    <section id="section1">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptas dolorum necessitatibus nihil nisi
+            sint quisquam saepe placeat est dicta earum dolores ut delectus repellat, officia sapiente ipsum facilis
+            maxime cumque vel? At aliquid cupiditate quis eius sapiente qui sed cumque magnam placeat consequuntur
+            expedita distinctio nisi omnis maiores laborum, esse, tempora rerum ad. Minima veniam molestiae nisi odio
+            repellendus sequi soluta commodi ullam, distinctio optio pariatur excepturi doloribus deleniti qui quam
+            blanditiis adipisci error fugit ipsum repudiandae beatae id iste veritatis magnam. Quasi, officia expedita
+            soluta animi iste voluptatum hic, sed vel mollitia beatae ullam quidem illo fugiat dignissimos!</p>
+        <button class="btn" id="btn1">Button 1</button>
+        <button class="btn" id="btn2">Button 2</button>
+    </section>
+    <section id="section2">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos.</h2>
+        <p>Magnam et officia ipsa architecto sint necessitatibus quas, quo sequi quisquam tenetur unde asperiores!
+            Debitis, culpa. Voluptatum in cum, iste iure ab eius id ducimus exercitationem consectetur, ratione quos,
+            harum quod non repellendus itaque! Facere quam laboriosam, fugiat commodi corrupti nisi perferendis dolorum
+            in odio nostrum explicabo id officiis at beatae nesciunt mollitia totam exercitationem voluptates aspernatur
+            ducimus sequi modi optio! Saepe illo veniam ipsum voluptatum id, dolore incidunt repudiandae minima
+            distinctio quidem harum suscipit unde quia impedit asperiores nisi dolorem doloribus in assumenda beatae
+            consectetur ullam? Odit recusandae id ab aut, ea, illo atque dolore, nisi qui saepe repudiandae.</p>
+        <button class="btn" id="btn1">Button 1</button>
+        <button class="btn" id="btn2">Button 2</button>
+    </section>
+    <section id="section3">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos.</h2>
+        <p>Ratione porro distinctio odio veritatis consequuntur beatae labore? Porro ut optio, temporibus sit sequi
+            nulla voluptates totam! Minima asperiores est perferendis necessitatibus, ea quasi facere recusandae maiores
+            suscipit tempora? Expedita, necessitatibus voluptas incidunt alias sed dolorum tempora atque accusantium
+            reiciendis culpa officia iste neque, ipsam ullam, nesciunt omnis autem nam eligendi rem voluptates
+            laudantium! Esse distinctio consectetur obcaecati, perferendis voluptatibus aspernatur nam accusantium
+            doloribus minima hic aperiam accusamus! A expedita numquam repellat, hic omnis cupiditate. Voluptate in
+            blanditiis a quia unde sapiente excepturi voluptatem nihil quasi eligendi laborum necessitatibus totam animi
+            ad dicta commodi labore rem, minus magni? Sit, cumque?</p>
+        <button class="btn" id="btn1">Button 1</button>
+        <button class="btn" id="btn2">Button 2</button>
+    </section>
+</body>
+
+</html>
