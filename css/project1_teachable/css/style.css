@@ -1,0 +1,269 @@
+@import url('fonts.css');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------ Variables ------------------------ */
+
+:root{
+    --light-green: #CDE2D9;
+    --medium-green: #21CD9C;
+    --dark-green: #1B4942;
+    --off-white: #F8FAF4;
+    --black: #222222;
+    --white: #FFFFFF;
+    --green-btn-hover: #20A27F;
+    --black-btn-hover: #434343;
+
+    --primary-fonts: "Noto Sans", cursive;
+    --secondary-fonts: "Playfair Display", sans-serif;
+}
+
+/* ------------------------ Global Style & Classes ------------------------ */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: var(--primary-fonts);
+    color: var(--black);
+    background-color: var(--off-white);
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 1.2em 1.5em;
+    border-radius: 5px;
+}
+.green-btn{
+    background-color: var(--medium-green);
+    color: var(--black);
+    position: relative;
+    top: 5px;
+}
+.green-btn:hover{
+    background-color: var(--green-btn-hover);
+}
+.black-btn{
+    background-color: var(--black);
+    color: var(--white);
+}
+.black-btn:hover{
+    background-color: var(--black-btn-hover);
+}
+
+/* ------------------------ Upper Navbar ------------------------ */
+.upper-nav{
+    background-color: var(--medium-green);
+    padding: 1.3rem 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.upper-nav .upper-nav-text-container{
+    width: fit-content;
+    gap: 10rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.upper-nav-btn{
+    color: white;
+    font-weight: 500;
+    background-color: var(--black);
+    padding: 0.4rem 3rem;
+    font-family: Helvetica, sans-serif;
+    border-radius: 3px;
+}
+
+.upper-nav .close-btn{
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.upper-nav .close-btn:hover{
+    background-color: white;
+    color: #BBB;
+}
+
+/* ------------------------ Lower Navbar ------------------------ */
+.lower-nav{
+    background-color: var(--white);
+    border-bottom: 1px solid black;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.lower-nav .lower-nav-left{
+    /* border: 2px solid black; */
+    padding: 2rem 0;
+    display: flex;
+    gap: 2.5rem;
+}
+.lower-nav-left .nav-menu{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-menu .nav-link{
+    /* border: 2px solid blue; */
+    color: var(--black);
+}
+
+.lower-nav .lower-nav-right{
+    /* border: 2px solid black; */
+    display: flex;
+}
+.lower-nav-right div{
+    padding: 2rem 3rem;
+}
+.lower-nav-right #login-box{
+    border-right: 1px solid black;
+}
+
+.lower-nav-right .login-signup-link{
+    color: var(--black);
+}
+
+.lower-nav .down-arrow-btn{
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* ---------------------------- Email-collector section ---------------------------- */
+.email-collector{
+    background-color: var(--white);
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.section-img-container{
+    max-width: 430px;
+    width: 95%;
+    z-index: 1;
+}
+
+.section-img-container img{
+    width: 100%;
+}
+
+.section-text-container{
+    width: 95%;
+    max-width: 400px;
+}
+
+.title{
+    font-family: var(--secondary-fonts);
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+sup{
+    font-size: 0.4em;
+    font-family: var(--primary-fonts);
+    font-weight: 300;
+}
+
+.text-normal{
+    font-size: 0.8rem;
+}
+
+.email-collector form{
+    margin: 5rem 0 0;
+}
+.email-collector form .form-input{
+    width: 60%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    height: 2.5rem;
+    margin-right: 15px;
+}
+
+
+
+/* ---------------------------- Video section ---------------------------- */
+
+.video-section{
+    background-color: var(--dark-green);
+    padding-top: 8rem;
+    position: relative;
+    bottom: 4.5rem;
+    height: 92vh;
+}
+
+.video-container{
+    max-width: 900px;
+    width: 95%;
+    margin: auto;
+}
+
+.video-container .video-heading{
+    color: var(--light-green);
+    font-size: 2.8rem;
+    font-family: var(--secondary-fonts);
+    margin-bottom: 4rem;
+}
+
+.video-container video{
+    width: 100%;
+}
+.video-container .video-description{
+    font-size: 1.2rem;
+    margin: 1rem 0 3rem;
+}
+
+
+/* ---------------------------- Features section ---------------------------- */
+
+.features-section{
+    padding-top: 500px;
+}
+
+.features-section .features-intro{
+    height: 80vh;
+}
+
+.features-section .features-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.features-container .feature-card{
+    width: 300px;
+    color: var(--dark-green);
+}
+
+.feature-card .card-number{
+    font-family: var(--secondary-fonts);
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+.feature-card hr{
+    height: 2.5px;
+    background-color: var(--dark-green);
+}
+.feature-card .card-title{
+    margin: 2rem 0;
+    font-size: 1.77rem;
+}
+.feature-card .card-text{
+    font-size: 0.85rem;
+    line-height: 1.5em;
+}
