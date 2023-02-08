@@ -67,6 +67,7 @@ body{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 500;
 }
 .upper-nav .upper-nav-text-container{
     width: fit-content;
@@ -106,9 +107,12 @@ body{
 }
 .lower-nav .lower-nav-left{
     /* border: 2px solid black; */
-    padding: 2rem 0;
+    padding: 2rem 0; 
     display: flex;
     gap: 2.5rem;
+}
+.lower-nav-left .logo-black{
+    width: 120px;
 }
 .lower-nav-left .nav-menu{
     /* border: 2px solid red; */
@@ -266,4 +270,56 @@ sup{
 .feature-card .card-text{
     font-size: 0.85rem;
     line-height: 1.5em;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+footer{
+    background-color: var(--black);
+    padding: 5rem 0;
+}
+footer .all-footer-list-container{
+    display: none;
+}
+.footer-container{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    color: var(--white);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    max-width: 950px;
+    width: 95%;
+    margin: auto;
+}
+.footer-logo-section{
+    max-width: 410px;
+    width: 100%;
+}
+.footer-logo-section .logo-white{
+    width: 220px;
+    margin-bottom: 3rem;
+}
+footer .footer-list-title{
+    margin-bottom: 2rem;
+}
+footer .footer-list-container li{
+    margin-bottom: 0.75rem;
+}
+.footer-container a{
+    color: var(--white);
+}
+
+/* ---------------------------- Media Queries ---------------------------- */
+/* @media screen () media query will be only applicable to the screen */
+/* @media all () default */
+@media (max-width: 620px){
+    .footer-container{
+        flex-direction: column;
+    }
+    .all-footer-list-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
