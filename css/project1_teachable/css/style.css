@@ -104,12 +104,17 @@ body{
     padding-left: 50px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
 }
 .lower-nav .lower-nav-left{
     /* border: 2px solid black; */
     padding: 2rem 0; 
     display: flex;
     gap: 2.5rem;
+}
+.lower-nav-left .bar-icon{
+    display: none;
 }
 .lower-nav-left .logo-black{
     width: 120px;
@@ -278,20 +283,23 @@ footer{
     background-color: var(--black);
     padding: 5rem 0;
 }
-footer .all-footer-list-container{
-    display: none;
-}
-.footer-container{
-    /* border: 2px solid white; */
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+.footer-container-sm, .footer-container-lg{
     color: var(--white);
     font-size: 0.85rem;
     letter-spacing: 0.5px;
     max-width: 950px;
     width: 95%;
     margin: auto;
+}
+.footer-container-sm{
+    display: none;
+}
+.footer-container-lg{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    
 }
 .footer-logo-section{
     max-width: 410px;
@@ -307,19 +315,83 @@ footer .footer-list-title{
 footer .footer-list-container li{
     margin-bottom: 0.75rem;
 }
-.footer-container a{
+.footer-container-lg a, .footer-container-sm a{
     color: var(--white);
 }
 
 /* ---------------------------- Media Queries ---------------------------- */
 /* @media screen () media query will be only applicable to the screen */
 /* @media all () default */
-@media (max-width: 620px){
-    .footer-container{
+
+@media (max-width: 1140px){
+    .lower-nav-left .bar-icon{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .lower-nav-left .nav-menu{
         flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        background-color: var(--black);
+        z-index: 2;
+        top: 101%;
+        left: 0;
+        max-width: 350px;
+        width: 95%;
+        padding: 2rem 15px 2rem 50px;
+        color: var(--light-green);
+        height: 40rem;
+    }
+    .nav-menu li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-menu .nav-link{
+        color: var(--light-green);
+    }
+}
+
+@media (max-width: 620px){
+    .footer-container-lg{
+        display: none;
+    }
+    .footer-container-sm{
+        display: block;
     }
     .all-footer-list-container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+    .footer-logo-section{
+        max-width: 600px;
+        width: 95%;
+    }
+    .email-collector{
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+    .email-collector form{
+        margin: 2rem 0 3rem;
+    }
+    .lower-nav .lower-nav-right{
+        flex-direction: column;
+        gap: 2.5rem;
+        position: absolute;
+        top: 31rem;
+        left: 0;
+        z-index: 2;
+    }
+    .lower-nav-right .login-signup-link{
+        color: var(--light-green);
+    }
+    .lower-nav-right div{
+        padding: 0rem 3rem;
+    }
+    .lower-nav-right #login-box{
+        border: none;
     }
 }

@@ -28,9 +28,10 @@
 
         <span><i class="fa-solid fa-xmark close-btn"></i></span>
     </nav>
-    <!-- <header>
+    <header>
         <nav class="lower-nav"> 
             <div class="lower-nav-left">
+                <i onclick="document.querySelector('.lower-nav').style.overflow = 'visible'" class="fa-solid fa-bars bar-icon"></i>
                 <img class="logo-black" src="/images/logo_black.svg" alt="">
                 <ul class="nav-menu">
                     <li>
@@ -52,7 +53,7 @@
                 <div><a class="login-signup-link" href="#">Join for free</a></div>
             </div>
         </nav>
-    </header> -->
+    </header>
 
     <main>
         <!-- ---------------------------- Email-collector section ---------------------------- -->
@@ -119,13 +120,12 @@
     </main>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container-lg">
             <div class="footer-logo-section">
                 <img class="logo-white" src="/images/logo_white.svg" alt="">
                 <p>Join the more than 100,000 creators who use Teachable to share their knowledge. Easily create an
                     online course or coaching business with our powerful yet simple all-in-one platform.</p>
             </div>
-            <!-- old one -->
             <div class="footer-list-container">
                 <p class="footer-list-title">Explore</p>
                 <ul>
@@ -162,8 +162,14 @@
                     <li><a href="#">Accessibility</a></li>
                 </ul>
             </div>
+        </div>
 
-            <!-- New one -->
+        <div class="footer-container-sm">
+            <div class="footer-logo-section">
+                <img class="logo-white" src="/images/logo_white.svg" alt="">
+                <p>Join the more than 100,000 creators who use Teachable to share their knowledge. Easily create an
+                    online course or coaching business with our powerful yet simple all-in-one platform.</p>
+            </div>
             <div class="all-footer-list-container">
                 <div class="footer-list-container">
                     <p class="footer-list-title">Explore</p>
@@ -207,3 +213,7 @@
 </body>
 
 </html>
+
+<!-- 
+    Next Class: Magic, Single CSS in multiple pages, mobile first
+ -->
