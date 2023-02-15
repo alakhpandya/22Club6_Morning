@@ -1,0 +1,34 @@
+
+:root{
+    --dark-col1: #674188;
+    --light-col1: #F7EFE5;
+    --light-col2: #C3ACD0;
+    --extra-light-col: #FFFBF5;
+    --extra-dark-col: black;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--light-col1);
+}
+/* ---------------- Navigation Bar ---------------- */
+.navbar{
+    background-color: var(--dark-col1);
+    color: var(--extra-light-col);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .brand-logo{
+    height: 70px;
+}
+.navbar .bar-icon{
+    font-size: 1.5rem;
+}
+

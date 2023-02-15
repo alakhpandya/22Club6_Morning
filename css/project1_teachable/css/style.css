@@ -7,8 +7,9 @@
 }
 
 /* ------------------------ Variables ------------------------ */
-
+ 
 :root{
+    /* 
     --light-green: #CDE2D9;
     --medium-green: #21CD9C;
     --dark-green: #1B4942;
@@ -16,7 +17,17 @@
     --black: #222222;
     --white: #FFFFFF;
     --green-btn-hover: #20A27F;
-    --black-btn-hover: #434343;
+    --black-btn-hover: #434343; 
+    */
+
+    --light-green: #540b0e;
+    --medium-green: #9e2a2b;
+    --dark-green: #fff3b0;
+    --off-white: #335c67;
+    --black: #e09f3e;
+    --white: #540b0e;
+    --green-btn-hover: #9e2a2b;
+    --black-btn-hover: #fff3b0;
 
     --primary-fonts: "Noto Sans", cursive;
     --secondary-fonts: "Playfair Display", sans-serif;
@@ -393,5 +404,18 @@ footer .footer-list-container li{
     }
     .lower-nav-right #login-box{
         border: none;
+    }
+
+    .upper-nav .upper-nav-text-container{
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .video-section{
+        padding-top: 2rem;
+    }
+    .features-section .features-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }
