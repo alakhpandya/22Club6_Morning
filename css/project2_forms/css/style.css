@@ -1,3 +1,4 @@
+@import url('/css/fonts.css');
 
 :root{
     --dark-col1: #674188;
@@ -15,6 +16,13 @@
 
 body{
     background-color: var(--light-col1);
+    font-family: 'Josefin Sans';
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
 }
 /* ---------------- Navigation Bar ---------------- */
 .navbar{
@@ -32,3 +40,23 @@ body{
     font-size: 1.5rem;
 }
 
+.nav-toggle{
+    /* position: absolute; */
+    background-color: var(--light-col2);
+    text-align: right;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    left: 101%;
+    transition: 0.2s;
+}
+.slide-in{
+    left: 0;
+}
+.nav-toggle .nav-toggle-link{
+    color: var(--dark-col1);
+}
+.nav-toggle li:nth-child(1){
+    margin-bottom: 20px;
+}

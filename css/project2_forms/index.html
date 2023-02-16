@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ---------------- Fontawesome CSS ---------------- -->
     <link rel="stylesheet" href="/css/all.min.css">
-    
+
     <!-- ---------------- Custom CSS ---------------- -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- ---------------- Navigation Bar ---------------- -->
-
-    <div class="navbar">
-        <img class="brand-logo" src="/images/logo_royal.png" alt="">
-        <i class="fa-solid fa-bars bar-icon"></i>
+    <div class="header">
+        <div class="navbar">
+            <a href="/index.html"><img class="brand-logo" src="/images/logo_royal.png" alt=""></a>
+            <i onclick="document.querySelector('.nav-toggle').classList.toggle('slide-in')"
+                class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        <ul class="nav-toggle">
+            <li><a class="nav-toggle-link" href="/login.html">Login</a></li>
+            <li><a class="nav-toggle-link" href="/signup.html">Sign Up</a></li>
+        </ul>
     </div>
 </body>
+
 </html>
