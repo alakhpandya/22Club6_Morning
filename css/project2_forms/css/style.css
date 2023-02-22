@@ -60,3 +60,94 @@ ul{
 .nav-toggle li:nth-child(1){
     margin-bottom: 20px;
 }
+
+
+/* ---------------- Login ---------------- */
+
+.form-container{
+    background-color: var(--light-col2);
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+}
+
+.form-container form{
+    border: solid var(--dark-col1);
+    padding: 2rem 1rem 1rem;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.form-title{
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(-50%);
+    background-color: var(--light-col2);
+}
+
+.input-box{
+    width: 100%;
+    position: relative;
+    margin: 1rem auto 2rem;
+}
+.input-box input{
+    height: 2.5rem;
+    width: 100%;
+    background-color: var(--light-col2);
+    border: none;
+    border-bottom: 1px solid var(--dark-col1);
+    padding-left: 20px;
+}
+.input-box input:focus{
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid var(--dark-col1);
+}
+.input-box label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark-col1);
+    transition: 0.2s;
+    padding: 2px;
+}
+.input-box input:focus + label{
+    top: 0;
+    left: 7px;
+    background-color: var(--light-col2);
+}
+
+.remember-forget-pwd-box{
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget-pwd-box a{
+    color: blue;
+}
+
+.submit-box{
+    width: fit-content;
+    margin: 1.5rem auto;
+}
+.submit-box input{
+    background-color: var(--dark-col1);
+    color: var(--light-col1);
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.signup-box a{
+    color: blue;
+}

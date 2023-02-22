@@ -1,1 +1,64 @@
-<h1>Login Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------- Fontawesome CSS ---------------- -->
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <!-- ---------------- Custom CSS ---------------- -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Royal | Login</title>
+</head>
+
+<body>
+    <!-- ---------------- Navigation Bar ---------------- -->
+    <div class="header">
+        <div class="navbar">
+            <a href="/index.html"><img class="brand-logo" src="/images/logo_royal.png" alt=""></a>
+            <i onclick="document.querySelector('.nav-toggle').classList.toggle('slide-in')"
+                class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        <ul class="nav-toggle">
+            <li><a class="nav-toggle-link" href="/login.html">Login</a></li>
+            <li><a class="nav-toggle-link" href="/signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <form action="">
+            <p class="form-title">Login</p>
+            <div class="input-box">
+                <input type="email" name="" id="">
+                <label for="">E-mail</label>
+            </div>
+            <div class="input-box">
+                <input type="password" name="" id="">
+                <label for="">Password</label>
+            </div>
+            <div class="remember-forget-pwd-box">
+                <div>
+                    <input type="checkbox" name="" id="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <div>
+                    <a href="#">Forget Password?</a>
+                </div>
+            </div>
+            <div class="submit-box">
+                <input type="submit" value="Login">
+            </div>
+            <div class="signup-box">
+                <p>New user? <a href="/signup.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Next Class: fix bugs of this page, fontawesome
+ -->
