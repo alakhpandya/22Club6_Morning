@@ -1,13 +1,90 @@
-<h1>Sign Up Page</h1>
-<!-- 
-    First Name
-    Last Name
-    Mobile No
-    email
-    password
-    confirm password
-    gender
-    I agree to terms of use
-    Register button
-    Already registered? Login here
- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------- Fontawesome CSS ---------------- -->
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <!-- ---------------- Custom CSS ---------------- -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Royal | Signup</title>
+</head>
+
+<body>
+    <!-- ---------------- Navigation Bar ---------------- -->
+    <div class="header">
+        <div class="navbar">
+            <a href="/index.html"><img class="brand-logo" src="/images/logo_royal.png" alt=""></a>
+            <i onclick="document.querySelector('.nav-toggle').classList.toggle('slide-in')"
+                class="fa-solid fa-bars bar-icon"></i>
+        </div>
+        <ul class="nav-toggle">
+            <li><a class="nav-toggle-link" href="/login.html">Login</a></li>
+            <li><a class="nav-toggle-link" href="/signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <div class="form-container signup-container">
+        <form action="">
+            <p class="form-title">Signup</p>
+            <div class="signup-lg">
+                <div class="personal-details">
+                    <div class="input-box">
+                        <input type="text" name="" id="" required> 
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="" id="" required> 
+                        <label for="">Last Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="" id="" required> 
+                        <label for="">Mobile No</label>
+                    </div>
+                </div>
+
+                <div class="account-details">
+                    <div class="input-box">
+                        <input type="text" name="" id="" required> 
+                        <label for="">E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="" id="" required>
+                        <label for="">Password</label>
+                        <i class="fa-solid fa-eye eye-icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="" id="" required>
+                        <label for="">Confirm Password</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <div><input type="radio" name="gender" id="female"> <label for="female">I am a female</label></div>
+                <div><input type="radio" name="gender" id="male"> <label for="male">I am a male</label></div>
+                <div><input type="radio" name="gender" id="other"> <label for="other">I don't want to disclose my gender</label></div>
+            </div>
+
+
+            <div class="remember-tnc-forget-pwd-box">
+                <div>
+                    <input type="checkbox" name="" id="tnc">
+                    <label for="tnc">I agree to terms of use</label>
+                </div>
+            </div>
+
+            <div class="submit-box">
+                <input type="submit" value="Register">
+            </div>
+            <div class="login-signup-box">
+                <p>Already have an account? <a href="/login.html">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
