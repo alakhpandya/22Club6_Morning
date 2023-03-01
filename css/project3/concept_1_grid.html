@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: lightcyan;
+        font-family: sans-serif;
+        padding: 3rem 0;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        /* grid-template-columns: 300px 300px 300px 300px; */
+        /* grid-template-columns: 600px 300px 300px; */
+        /* grid-template-columns: 25vw 25vw 25vw 25vw; */
+        /* grid-template-columns: repeat(4, 23vw); */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: 2fr 1fr 1fr; */
+        /* grid-template-columns: repeat(4, 1fr); */
+    }
+    .card{
+        border-radius: 20px;
+        padding: 1rem;
+    }
+    
+    #card1{
+        background-color: blueviolet;
+    }
+
+    #card2{
+        background-color: rgb(91, 104, 117);
+    }
+
+    #card3, #card4{
+        background-color: white;
+    }
+
+    #card5{
+        background-color: #222;
+    }
+
+    #card1, #card2, #card5{
+        color: #eee;
+    }
+
+    .circle-img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: burlywood;
+        border: solid;
+    }
+    .name-container{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .title{
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+
+    @media (min-width: 700px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        #card1{
+            grid-column: span 2;
+        }
+
+        #card3{
+            grid-row: span 2;
+        }
+
+        #card5{
+            grid-column: span 2;
+        }
+    }
+    @media (min-width: 1000px){
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="card1" class="card">
+            <div class="name-container">
+                <div class="circle-img"></div>
+                <div>
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="role">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate adipisci
+                doloremque, quos quibusdam vel distinctio!</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium alias odit
+                ipsa, cumque temporibus eveniet hic totam enim perferendis doloribus esse, cum ex laborum velit. Vel,
+                soluta atque. Iure nostrum aliquid modi, at dolores ullam dolorem error velit sint, quibusdam enim
+                suscipit amet non quod itaque veniam tenetur laborum obcaecati sequi?</p>
+        </div>
+        <div id="card2" class="card">
+            <div class="name-container">
+                <div class="circle-img"></div>
+                <div>
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="role">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="title">Ut doloremque aliquid expedita commodi quos magni non.</p>
+            <p class="description">Recusandae commodi similique, veniam non ex obcaecati animi assumenda nostrum
+                repellendus quasi!</p>
+        </div>
+        <div id="card3" class="card">
+            <div class="name-container">
+                <div class="circle-img"></div>
+                <div>
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="role">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="title">Explicabo sapiente possimus optio quam libero reiciendis, laboriosam esse.</p>
+            <p class="description">Fuga corporis odio inventore aut maiores, dolor sequi officiis optio minus velit
+                quasi autem dolorum, illum rerum incidunt sed eligendi modi dolore delectus vel. Sed voluptates totam,
+                suscipit consectetur obcaecati delectus assumenda perspiciatis corrupti non aliquid magni? Sit enim
+                veniam tempore culpa, sunt dolor omnis assumenda obcaecati laboriosam consequatur officia recusandae
+                aliquid quod quisquam illo commodi quia officiis dolorem magni incidunt suscipit laborum. Reiciendis
+                earum possimus accusamus sint quis nam, magnam impedit, et quaerat a incidunt aliquid molestias, ducimus
+                est! Nesciunt beatae reprehenderit magnam a, sint veniam placeat at suscipit in distinctio
+                voluptatum accusamus!</p>
+        </div>
+        <div id="card4" class="card">
+            <div class="name-container">
+                <div class="circle-img"></div>
+                <div>
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="role">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="title">Sed, vero, nemo error, est dolores!</p>
+            <p class="description">Laudantium aspernatur totam sit illo velit distinctio quidem suscipit. Nam magni quo
+                corporis architecto explicabo perspiciatis aut magnam?</p>
+        </div>
+        <div id="card5" class="card">
+            <div class="name-container">
+                <div class="circle-img"></div>
+                <div>
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="role">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="title">Quisquam similique voluptatem nisi unde facere nesciunt est aliquam reiciendis, tempora
+                fuga ratione ullam</p>
+            <p class="description">Ab dolore nesciunt voluptatibus eaque. Nobis omnis quis consequatur sunt earum nihil,
+                recusandae illum atque minima corporis consectetur saepe labore vero eligendi quas et inventore
+                obcaecati deleniti! Explicabo, ipsa, dolores, illum voluptatem vitae reiciendis dolorem repellat
+                similique fugit rem possimus. Vero, tempora quas!</p>
+        </div>
+    </div>
+</body>
+
+</html>
