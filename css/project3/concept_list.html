@@ -1,9 +1,247 @@
 <!-- 
     Grid - done
-    Animation
-    Visibility hidden vs display none
-    Overflow
-    Box-shadow
-    Text-shadow
-    svg
+    Animation - done
+    Visibility hidden vs display none -done
+    Overflow -done
+    Box-shadow - done
+    Text-shadow - done
+    svg - started
  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #box1 {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        background-color: lightgreen;
+        height: 50px;
+        width: 50px;
+        border: solid;
+        /* animation-name: moveBox1; */
+        /* animation-name: moveBox2; */
+
+        /* animation-delay: 2s; */
+        animation-duration: 4s;
+        /* animation-iteration-count: 1;   default */
+        /* animation-iteration-count: 3; */
+        animation-iteration-count: infinite;
+        /* animation-play-state: paused; */
+        /* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
+    }
+    #progress-container{
+        margin-top: 150px;
+        margin-left: 30px;
+        border: solid;
+        width: 90vw;
+    }
+
+    #progress {
+        height: 30px;
+        width: 0px;
+        background-color: maroon;
+        /* animation-name: progressBar; */
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes moveBox1 {
+        from {
+            top: 50px;
+            left: 50px;
+        }
+
+        to {
+            top: 400px;
+            left: 50px;
+        }
+    }
+
+    @keyframes moveBox2 {
+        0% {
+            top: 50px;
+            left: 50px;
+        }
+
+        25% {
+            top: 350px;
+            left: 50px;
+            border-radius: 25%;
+        }
+
+        50% {
+            top: 350px;
+            left: 350px;
+            border-radius: 50%;
+        }
+
+        75% {
+            top: 50px;
+            left: 350px;
+            border-radius: 25%;
+        }
+
+        100% {
+            top: 50px;
+            left: 50px;
+        }
+    }
+
+    @keyframes progressBar {
+        0% {
+            width: 0%;
+        }
+
+        10% {
+            width: 10%;
+        }
+
+        20% {
+            width: 20%;
+        }
+
+        30% {
+            width: 30%;
+        }
+
+        40% {
+            width: 40%;
+        }
+
+        50% {
+            width: 50%;
+        }
+
+        60% {
+            width: 60%;
+        }
+
+        70% {
+            width: 70%;
+        }
+
+        80% {
+            width: 80%;
+        }
+
+        90% {
+            width: 90%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    #play{
+        /* visibility: hidden; */
+        /* display: none; */
+    }
+
+    #text-box{
+        background-color: lightpink;
+        width: 400px;
+        margin: 3rem auto;
+        /* padding: 1rem; */
+        height: 100px;
+        /* overflow-y: hidden; */
+        /* overflow-y: visible;    default */
+        /* overflow-y: scroll; */
+        overflow-y: auto;
+
+        font-size: 2.5rem;
+    }
+
+    #img-box{
+        width: 400px;
+        height: 300px;
+        border: solid;
+        margin: 3rem auto;
+
+        /* overflow-x: scroll; */
+        /* overflow-x: auto; */
+        /* overflow-x: hidden;
+        overflow-y: hidden; */
+
+        overflow: hidden;
+        /* overflow: auto; */
+    }
+    #img-box img{
+        height: 100%;
+    }
+
+
+    #trial-box{
+        margin: 5rem auto;
+        height: 300px;
+        width: 200px;
+        border: solid rgb(222, 222, 222) 1px;
+        border-radius: 10px;
+
+        /* box-shadow: 15px 5px;
+        box-shadow: -15px 5px;
+        box-shadow: 15px -35px; */
+
+        /* box-shadow: 10px 10px 5px; */
+        /* box-shadow: 10px 10px 15px; */
+        /* box-shadow: 0px 0px 0px 15px; */
+        /* box-shadow: 0px 0px 15px 15px; */
+        /* box-shadow: 0px 0px 15px 15px rgba(255, 0, 0); */
+        /* box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2); */
+
+        /* box-shadow: x-offset y-offset blur-radius spread-radius color; */
+
+        box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.3),
+        0px 0px 2px 12px rgba(255, 255, 255, 1),
+        0px 0px 5px 17px rgba(0, 255, 0, 0.3);
+
+    }
+
+    #text-box{
+        /* text-shadow: 1.5px 1.5px white; */
+        text-shadow: 2px 2px 5px blue;
+        color: white;
+    }
+
+    /* Need of svg */
+    #circle-img{
+        height: 2000px;
+    }
+</style>
+
+<body>
+    <!-- Animation -->
+    <div id="box1"></div>
+    <button id="play" onclick="document.getElementById('box1').style.animationPlayState = 'running';">Play</button>
+    <button onclick="document.getElementById('box1').style.animationPlayState = 'paused';">stop</button>
+    <div id="progress-container">
+        <div id="progress"></div>
+    </div>
+
+    <div id="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam, molestias, corrupti consequuntur, architecto quia aliquid nostrum sint esse quaerat voluptatibus fugit dolores? Amet quia, laudantium at aliquid harum atque nisi quas blanditiis qui ea pariatur minus possimus, incidunt aut voluptatem aspernatur? Velit, ex tenetur deserunt consectetur optio earum culpa dicta, sunt iste veniam explicabo maxime doloremque porro corrupti repellat architecto veritatis sint, harum dolorem dolore modi quae impedit molestiae minima. Officia esse numquam dolor suscipit. Dolor recusandae excepturi debitis, aliquam natus hic quis neque nisi nostrum, minima quasi praesentium corporis, eaque officiis beatae perspiciatis. Quas ipsam dolore veniam adipisci.</div>
+
+
+    <div id="img-box">
+        <img src="/dog.jpg" alt="">
+    </div>
+
+
+    <div id="trial-box"></div>
+
+    <img id="circle-img" src="/circle.png" alt="">
+</body>
+
+</html>
