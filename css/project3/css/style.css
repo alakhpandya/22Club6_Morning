@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans&family=Lexend+Deca&family=Livvic&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    /*      Theme colors        */
+    --headline-color: #3f4954;
+    --paragraph-color : #686666da;
+    --footer-bg-color: #0f0f0f;
+    --white: #ffffff;
+    --nav-hover: #104f55;
+    --social-hover: #a1c4cf;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --primary-fonts: 'Abel', cursive;
+    --headline-fonts: 'Anton', cursive;
+    --title-fonts: 'Lexend', cursive;
+    --btn-fonts : 'Livvic', cursive;
+}
+
+body{
+    font-family: var(--primary-fonts);
+}
