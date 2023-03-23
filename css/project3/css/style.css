@@ -21,12 +21,146 @@
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
     /*      theme font-family   */
-    --primary-fonts: 'Abel', cursive;
-    --headline-fonts: 'Anton', cursive;
-    --title-fonts: 'Lexend', cursive;
-    --btn-fonts : 'Livvic', cursive;
+    --primary-fonts: 'Abel', sans-serif;
+    --headline-fonts: 'Anton', sans-serif;
+    --title-fonts: 'Lexend Deca', sans-serif;
+    --btn-fonts : 'Livvic', sans-serif;
 }
 
+/* ---------------------------- Global Classes ---------------------------- */
 body{
     font-family: var(--primary-fonts);
+    color: var(--headline-color);
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* ---------------------------- Navbar ---------------------------- */
+.nav-bg, .nav-sm{
+    /* background-color: #a1c4fd; */
+    height: 4rem;
+    padding: 0 2rem;
+}
+.nav-bg{
+    display: none;
+}
+.nav-sm{
+    overflow: hidden;
+    transition: 0.5s;
+}
+.expand{
+    height: 33rem;
+}
+.nav-shrink{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .brand-logo{
+    font-family: var(--title-fonts);
+    color: var(--headline-color);
+    font-size: 1.5rem;
+}
+nav .bar-icon{
+    font-size: 1.5rem;
+}
+.nav-expand{
+    font-size: 1.2rem;
+}
+.nav-expand ul{
+    padding: 1rem 3rem;
+}
+.nav-expand ul li{
+    margin: 2.7rem 0;
+}
+nav .social{
+    display: flex;
+    gap: 0.7rem;
+}
+nav .social-icons{
+    cursor: pointer;
+}
+nav .social-icons:hover{
+    color: var(--social-hover);
+}
+nav .nav-links{
+    color: var(--headline-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- Media Queries ---------------------------- */
+@media (min-width : 750px){
+    .nav-sm{
+        display: none;
+    }
+    .nav-bg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bg ul{
+        display: flex;
+    }
+    .nav-bg ul li{
+        padding: 0 1rem;
+        height: 4rem;
+        padding-top: 1.25rem;
+        /* display: flex;
+        align-items: center; */
+    }
+    .nav-bg ul li:hover{
+        background-color: var(--nav-hover);
+    }
+    .nav-bg ul li:hover a{
+        color: var(--white);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
