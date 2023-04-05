@@ -48,6 +48,13 @@ ul{
 .rounded-btn{
     border-radius: 1.5em;
 }
+.long-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
 
 /* ---------------------------- Navbar ---------------------------- */
 .nav-bg, .nav-sm{
@@ -130,10 +137,10 @@ nav .nav-links{
 
 .banner-text{
     position: absolute;
-    width: 95%;
+    width: 100%;
     top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    /* transform: translate(-50%, -50%); */
     color: white;
     text-align: center;
 }
@@ -155,11 +162,9 @@ nav .nav-links{
 }
 
 .carousel-container{
-    border: solid blue;
     padding: 5rem;
 }
 #carousel{
-    border: solid green;
     text-align: center;
 }
 .owl-nav{
@@ -180,17 +185,121 @@ nav .nav-links{
     font-size: 1.7rem;
 }
 .carousel-item{
-    border: red solid;
-    width: 350px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 350px;
+    text-align: center;
 }
-.carousel-item .carousel-img{
-    
+.carousel-item h3{
+    margin: 1rem 0;
+}
+.carousel-item .btn{
+    margin-bottom: 1rem;
+}
+.carousel-item p{
+    margin-bottom: 1rem;
 }
 
+/* ---------------------------- Blog Post ---------------------------- */
 
+main{
+    display: grid;
+}
+.blog-post{
+    width: 80%;
+    margin: auto;
+}
+.blog-post-img-container{
+    overflow: hidden;
+}
+.blog-post-img{
+    width: 100%;
+    transition: 0.5s;
+}
+.blog-post-img:hover{
+    transform: scale(1.2);
+}
+.blog-post-img-container .sticker{
+    display: none;
+}
+.blog-title{
+    font-family: var(--headline-fonts);
+    color: #3f4954;
+    margin-top: 1rem;
+}
+.blog-text{
+    font-family: var(--title-fonts);
+    color: rgba(104, 102, 102, 0.855);
+    margin: 1rem 0 1.5rem;
+}
+.seperator{
+    width: 90%;
+    margin: 3rem auto;
+    background-color: #000;
+}
 
+.pagination{
+    margin: 3rem auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.pagination .angle-arrow{
+    font-size: 2rem;
+}
+.pagination .pages{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: var(--headline-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: var(--title-fonts);
+}
 
+/* ---------------------------- Sidebar ---------------------------- */
+.category-container{
+    width: 80%;
+    margin: auto;
+}
+.category-title{
+    font-family: var(--title-fonts);
+    margin: 4rem 0 2rem;
+}
 
+.popular-post-container{
+    width: 80%;
+    margin: 2rem auto;
+}
+.popular-post-img{
+    width: 100%;
+}
+.popular-post-headline{
+    color: var(--headline-color);
+    font-family: var(--headline-fonts);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form{
+    width: 80%;
+    margin: auto;
+}
+.newsletter-form input{
+    width: 100%;
+    height: 2.5rem;
+    margin: 1rem 0;
+}
+.newsletter-form input[type = "email"]{
+    padding-left: 20px;
+}
+
+.popular-tag{
+    margin-bottom: 0.7rem;
+}
 
 
 /* ---------------------------- Media Queries ---------------------------- */
@@ -218,5 +327,11 @@ nav .nav-links{
     }
     .nav-bg ul li:hover a{
         color: var(--white);
+    }
+}
+
+@media (min-width : 1000px){
+    main{
+        grid-template-columns: 70% 30%;
     }
 }
